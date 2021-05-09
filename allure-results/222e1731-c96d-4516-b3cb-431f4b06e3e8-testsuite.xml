@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620459100454' stop='1620459103077'>
+    <name>Sign up page tests</name>
+    <title>Sign up page tests</title>
+    <test-cases>
+        <test-case start='1620459100455' status='broken' stop='1620459103003'>
+            <name>should verify the interactive elements on sign up page</name>
+            <title>should verify the interactive elements on sign up page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620459100457' status='passed' stop='1620459102946'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e51ae260-fe86-410d-8f02-336ac2273c14-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620459102949' status='broken' stop='1620459103002'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c9df1154-70dd-443e-9c70-79b230a310c4-attachment.json' type='application/json' size='53'/>
+                    </attachments>
+                    <steps>
+                        <step start='1620459102985' status='broken' stop='1620459103002'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=90.0.4430.93)</message>
+                <stack-trace>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=90.0.4430.93)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at global.$ (/home/vivek/Regenera/node_modules/@wdio/runner/build/index.js:189:42)
+                    at SignUp.get userType [as userType] (/home/vivek/Regenera/test/pageobjects/signup.page.js:7:30)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:18:27)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1620459103003' status='broken' stop='1620459103033'>
+            <name>should redirect to login page</name>
+            <title>should redirect to login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620459103004' status='broken' stop='1620459103033'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='65eb335b-60c5-40a2-9858-f350330051a0-attachment.json' type='application/json' size='74'/>
+                    </attachments>
+                    <steps>
+                        <step start='1620459103022' status='broken' stop='1620459103033'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=90.0.4430.93)</message>
+                <stack-trace>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=90.0.4430.93)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at global.$ (/home/vivek/Regenera/node_modules/@wdio/runner/build/index.js:189:42)
+                    at SignUp.get signInLink [as signInLink] (/home/vivek/Regenera/test/pageobjects/signup.page.js:6:32)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:27:37)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1620459103034' status='broken' stop='1620459103075'>
+            <name>should show error message when password is less than 8 chars long</name>
+            <title>should show error message when password is less than 8 chars long</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620459103034' status='broken' stop='1620459103075'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4375f123-8458-4625-a7fb-52ea9b31e656-attachment.json' type='application/json' size='53'/>
+                    </attachments>
+                    <steps>
+                        <step start='1620459103048' status='broken' stop='1620459103075'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=90.0.4430.93)</message>
+                <stack-trace>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=90.0.4430.93)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at global.$ (/home/vivek/Regenera/node_modules/@wdio/runner/build/index.js:189:42)
+                    at SignUp.get password [as password] (/home/vivek/Regenera/test/pageobjects/signup.page.js:12:30)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:32:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

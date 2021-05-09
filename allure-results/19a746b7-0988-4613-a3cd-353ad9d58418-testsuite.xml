@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620409462244' stop='1620409571853'>
+    <name>Sign up page tests</name>
+    <title>Sign up page tests</title>
+    <test-cases>
+        <test-case start='1620409462244' status='broken' stop='1620409571852'>
+            <name>should show error message when password length is not 8 chars long</name>
+            <title>should show error message when password length is not 8 chars long</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620409462247' status='passed' stop='1620409571345'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='927dc0b0-0975-4fb9-b9bd-83889b5728e0-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409571351' status='passed' stop='1620409571370'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2ec4ed76-dd63-42bc-bb5b-77c27aff3cfb-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='fd2be87a-2977-411d-b71d-3f1c6dadb37e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409571383' status='passed' stop='1620409571424'>
+                    <name>POST /session/:sessionId/element/69716473-926e-4da9-ae09-a7e96fe38fab/clear</name>
+                    <title>POST /session/:sessionId/element/69716473-926e-4da9-ae09-a7e96fe38fab/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1620409571427' status='passed' stop='1620409571567'>
+                    <name>POST /session/:sessionId/element/69716473-926e-4da9-ae09-a7e96fe38fab/value</name>
+                    <title>POST /session/:sessionId/element/69716473-926e-4da9-ae09-a7e96fe38fab/value</title>
+                    <attachments>
+                        <attachment title='Request' source='60f71c4e-e255-464a-be74-eeba52917273-attachment.json' type='application/json' size='23'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409571568' status='passed' stop='1620409571850'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='bca20179-6058-4bfd-9f2d-b59d481fb106-attachment.png' type='image/png' size='555766'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'getText' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'getText' of undefined
+                    at SignUp.getError (/home/vivek/Regenera/test/pageobjects/signup.page.js:32:21)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:19:27)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

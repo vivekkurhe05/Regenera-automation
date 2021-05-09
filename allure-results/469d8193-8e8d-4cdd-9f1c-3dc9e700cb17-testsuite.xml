@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620412254688' stop='1620412393686'>
+    <name>Sign up page tests</name>
+    <title>Sign up page tests</title>
+    <test-cases>
+        <test-case start='1620412254688' status='broken' stop='1620412393685'>
+            <name>"before all" hook for Sign up page tests</name>
+            <title>"before all" hook for Sign up page tests</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620412254690' status='broken' stop='1620412393685'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d3add7ff-dc87-4e71-ab79-aa77802a4077-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps>
+                        <step start='1620412393676' status='broken' stop='1620412393685'>
+                            <name>DELETE /session/:sessionId</name>
+                            <title>DELETE /session/:sessionId</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>socket hang up</message>
+                <stack-trace>RequestError: socket hang up
+                    at ClientRequest.&lt;anonymous> (/home/vivek/Regenera/node_modules/got/dist/source/core/index.js:956:111)
+                    at ClientRequest.origin.emit (/home/vivek/Regenera/node_modules/@szmarczak/http-timer/dist/source/index.js:39:20)
+                    at Socket.socketOnEnd (_http_client.js:458:9)
+                    at endReadableNT (_stream_readable.js:1241:12)
+                    at connResetException (internal/errors.js:609:14)
+                    at Socket.socketOnEnd (_http_client.js:458:23)
+                    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+                    at SignUp.open (/home/vivek/Regenera/test/pageobjects/page.js:11:24)
+                    at SignUp.open (/home/vivek/Regenera/test/pageobjects/signup.page.js:15:22)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:8:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

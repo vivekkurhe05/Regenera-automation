@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620324467416' stop='1620324467454'>
+    <name>Test login functionality</name>
+    <title>Test login functionality</title>
+    <test-cases>
+        <test-case start='1620324467417' status='broken' stop='1620324467441'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620324467422' status='broken' stop='1620324467440'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='dc26a13a-3835-4c10-84f9-04455b524414-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps>
+                        <step start='1620324467429' status='broken' stop='1620324467440'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1620324467434' status='broken' stop='1620324467440'>
+                                    <name>POST /session/:sessionId/url</name>
+                                    <title>POST /session/:sessionId/url</title>
+                                    <attachments>
+                                        <attachment title='Request' source='93bf0374-35f6-4dd6-838d-1a62a7db98ac-attachment.json' type='application/json' size='55'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.email.addValue is not a function</message>
+                <stack-trace>TypeError: this.email.addValue is not a function
+                    at LoginPage.with (/home/vivek/Regenera/test/pageobjects/login.page.js:19:20)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/example.e2e.js:7:19)
+                    at Context.executeAsync (/home/vivek/Regenera/node_modules/@wdio/utils/build/shim.js:136:25)
+                    at Context.testFrameworkFnWrapper (/home/vivek/Regenera/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

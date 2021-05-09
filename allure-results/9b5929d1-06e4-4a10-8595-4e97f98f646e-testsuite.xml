@@ -1,0 +1,86 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620409792138' stop='1620409947284'>
+    <name>Sign up page tests</name>
+    <title>Sign up page tests</title>
+    <test-cases>
+        <test-case start='1620409792138' status='broken' stop='1620409947283'>
+            <name>should show error message when password length is not 8 chars long</name>
+            <title>should show error message when password length is not 8 chars long</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620409792141' status='passed' stop='1620409946645'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c2ba0b77-ae61-4530-bf13-7195ff545f97-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409946650' status='passed' stop='1620409946668'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='fed80e85-dbf3-4bc0-9248-2b1a5fac7a36-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='1cf1d994-8f15-4c28-a711-5038f48c4882-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409946686' status='passed' stop='1620409946727'>
+                    <name>POST /session/:sessionId/element/ded8bdcb-7ec4-4f1d-ac56-bd9421cfd0db/clear</name>
+                    <title>POST /session/:sessionId/element/ded8bdcb-7ec4-4f1d-ac56-bd9421cfd0db/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1620409946731' status='passed' stop='1620409946850'>
+                    <name>POST /session/:sessionId/element/ded8bdcb-7ec4-4f1d-ac56-bd9421cfd0db/value</name>
+                    <title>POST /session/:sessionId/element/ded8bdcb-7ec4-4f1d-ac56-bd9421cfd0db/value</title>
+                    <attachments>
+                        <attachment title='Request' source='076f5071-62b2-45e9-901d-c1adff190ad5-attachment.json' type='application/json' size='23'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409946850' status='passed' stop='1620409946872'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='732efb49-4759-4510-a8c0-e460710d1fa7-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='b2858f21-4ff6-4dbf-94fd-03e533dbc3f0-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620409946877' status='passed' stop='1620409946959'>
+                    <name>POST /session/:sessionId/element/4f1236af-b820-4156-a61d-74922a3a0156/click</name>
+                    <title>POST /session/:sessionId/element/4f1236af-b820-4156-a61d-74922a3a0156/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1620409946961' status='passed' stop='1620409947282'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='fa7d383d-538f-44b0-83ef-86378572d28f-attachment.png' type='image/png' size='538368'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'getText' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'getText' of undefined
+                    at SignUp.getError (/home/vivek/Regenera/test/pageobjects/signup.page.js:32:21)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:20:27)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

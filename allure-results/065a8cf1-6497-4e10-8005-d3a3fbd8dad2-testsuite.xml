@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620410434285' stop='1620410485929'>
+    <name>Sign up page tests</name>
+    <title>Sign up page tests</title>
+    <test-cases>
+        <test-case start='1620410434285' status='failed' stop='1620410485928'>
+            <name>should show error message when password length is not 8 chars long</name>
+            <title>should show error message when password length is not 8 chars long</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620410434289' status='passed' stop='1620410475310'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='92a93151-d2ba-45d9-83c8-a424b4ff93bb-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620410475313' status='passed' stop='1620410475332'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='8f5094cb-f307-482c-be3a-95cbbcefb8d6-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='736029fb-09ac-40ba-a724-83c2e69da000-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620410475341' status='passed' stop='1620410475380'>
+                    <name>POST /session/:sessionId/element/ce0e4d82-a360-46de-b7ba-a2fa2394a674/clear</name>
+                    <title>POST /session/:sessionId/element/ce0e4d82-a360-46de-b7ba-a2fa2394a674/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1620410475383' status='passed' stop='1620410475486'>
+                    <name>POST /session/:sessionId/element/ce0e4d82-a360-46de-b7ba-a2fa2394a674/value</name>
+                    <title>POST /session/:sessionId/element/ce0e4d82-a360-46de-b7ba-a2fa2394a674/value</title>
+                    <attachments>
+                        <attachment title='Request' source='650a6a42-f0a9-4d81-9353-b68ca8156322-attachment.json' type='application/json' size='23'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620410475487' status='passed' stop='1620410475519'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d5d6e43e-21bf-417d-a96f-2ecc7cd8e711-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='321ce664-7fb2-48f3-b6ce-5fd291ee5ffb-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620410475528' status='passed' stop='1620410475583'>
+                    <name>POST /session/:sessionId/element/985ca5df-7613-452e-9bc1-aba13bf6fc8f/click</name>
+                    <title>POST /session/:sessionId/element/985ca5df-7613-452e-9bc1-aba13bf6fc8f/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1620410475584' status='passed' stop='1620410475614'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='73135577-cd0a-48d7-9a08-de84e9cb13d6-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='5e4ebc54-0e56-44c6-abf2-d0c58c33f6db-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620410475620' status='passed' stop='1620410475641'>
+                    <name>GET /session/:sessionId/element/1dfdd58e-b73f-4ad4-a8e9-7b6dc1efd617/text</name>
+                    <title>GET /session/:sessionId/element/1dfdd58e-b73f-4ad4-a8e9-7b6dc1efd617/text</title>
+                    <attachments>
+                        <attachment title='Response' source='219777cc-a6d3-4974-ad68-5fde92ec01fd-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620410485651' status='passed' stop='1620410485926'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9f76bde0-5b95-473e-a1be-3fd6e7ee7e07-attachment.png' type='image/png' size='538355'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect The password should be at least 8 characters. to have text
+                
+                Expected: "The password should be at least 8 characters."
+                Received: undefined</message>
+                <stack-trace>Error: Expect The password should be at least 8 characters. to have text
+                
+                Expected: "The password should be at least 8 characters."
+                Received: undefined
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:20:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

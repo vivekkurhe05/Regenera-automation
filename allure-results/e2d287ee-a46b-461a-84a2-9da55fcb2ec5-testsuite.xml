@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620409353717' stop='1620409452270'>
+    <name>Sign up page tests</name>
+    <title>Sign up page tests</title>
+    <test-cases>
+        <test-case start='1620409353717' status='broken' stop='1620409452269'>
+            <name>"before all" hook for Sign up page tests</name>
+            <title>"before all" hook for Sign up page tests</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620409353720' status='broken' stop='1620409452269'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='105c8b58-dd26-4d17-9ae2-0c5b7643ab7c-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>socket hang up</message>
+                <stack-trace>RequestError: socket hang up
+                    at ClientRequest.&lt;anonymous> (/home/vivek/Regenera/node_modules/got/dist/source/core/index.js:956:111)
+                    at ClientRequest.origin.emit (/home/vivek/Regenera/node_modules/@szmarczak/http-timer/dist/source/index.js:39:20)
+                    at Socket.socketOnEnd (_http_client.js:458:9)
+                    at endReadableNT (_stream_readable.js:1241:12)
+                    at connResetException (internal/errors.js:609:14)
+                    at Socket.socketOnEnd (_http_client.js:458:23)
+                    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+                    at SignUp.open (/home/vivek/Regenera/test/pageobjects/page.js:11:24)
+                    at SignUp.open (/home/vivek/Regenera/test/pageobjects/signup.page.js:15:22)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/signup.e2e.js:9:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

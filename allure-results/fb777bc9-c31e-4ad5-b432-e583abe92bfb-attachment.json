@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "input#password + div.ValidationError_root__3g8Va"
+}

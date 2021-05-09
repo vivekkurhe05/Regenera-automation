@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620454850618' stop='1620454850625'>
+    <name>Test login functionality</name>
+    <title>Test login functionality</title>
+    <test-cases>
+        <test-case start='1620454850619' status='broken' stop='1620454850624'>
+            <name>"before each" hook for Test login functionality</name>
+            <title>"before each" hook for Test login functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Invalid URL: [object Object]</message>
+                <stack-trace>TypeError [ERR_INVALID_URL]: Invalid URL: [object Object]
+                    at onParseError (internal/url.js:258:9)
+                    at new URL (internal/url.js:334:5)
+                    at new URL (internal/url.js:331:22)
+                    at LoginPage.open (/home/vivek/Regenera/test/pageobjects/page.js:11:24)
+                    at LoginPage.open (/home/vivek/Regenera/test/pageobjects/login.page.js:13:22)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/login.e2e.js:8:19)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

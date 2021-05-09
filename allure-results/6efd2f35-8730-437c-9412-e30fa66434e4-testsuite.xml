@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620449506402' stop='1620449521262'>
+    <name>Test login functionality</name>
+    <title>Test login functionality</title>
+    <test-cases>
+        <test-case start='1620449506402' status='broken' stop='1620449521248'>
+            <name>"before each" hook for Test login functionality</name>
+            <title>"before each" hook for Test login functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620449506406' status='broken' stop='1620449521248'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c3b49f07-7ab0-4168-bb62-6556951e80d7-attachment.json' type='application/json' size='48'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620449521250' status='undefined'>
+                    <name>DELETE /session/:sessionId</name>
+                    <title>DELETE /session/:sessionId</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>socket hang up</message>
+                <stack-trace>RequestError: socket hang up
+                    at ClientRequest.&lt;anonymous> (/home/vivek/Regenera/node_modules/got/dist/source/core/index.js:956:111)
+                    at ClientRequest.origin.emit (/home/vivek/Regenera/node_modules/@szmarczak/http-timer/dist/source/index.js:39:20)
+                    at Socket.socketOnEnd (_http_client.js:458:9)
+                    at endReadableNT (_stream_readable.js:1241:12)
+                    at connResetException (internal/errors.js:609:14)
+                    at Socket.socketOnEnd (_http_client.js:458:23)
+                    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+                    at LoginPage.open (/home/vivek/Regenera/test/pageobjects/page.js:11:24)
+                    at LoginPage.open (/home/vivek/Regenera/test/pageobjects/login.page.js:12:22)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/login.e2e.js:8:19)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

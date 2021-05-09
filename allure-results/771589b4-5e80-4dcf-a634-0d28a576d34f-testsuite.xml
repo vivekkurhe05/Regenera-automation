@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620324823505' stop='1620324896067'>
+    <name>Test login functionality</name>
+    <title>Test login functionality</title>
+    <test-cases>
+        <test-case start='1620324823506' status='broken' stop='1620324896066'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620324823508' status='passed' stop='1620324890852'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='62386030-da9f-45ae-a9b9-6db8e2406da6-attachment.json' type='application/json' size='48'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324890854' status='passed' stop='1620324890872'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d92591ed-66ad-4d38-bc1a-da42b6c6a92f-attachment.json' type='application/json' size='50'/>
+                        <attachment title='Response' source='ce92eccc-3513-4bd7-a9b0-01ce50784e20-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324890885' status='passed' stop='1620324891067'>
+                    <name>POST /session/:sessionId/element/51087e3b-5788-40a7-9aec-5c8ee2f8e9a9/value</name>
+                    <title>POST /session/:sessionId/element/51087e3b-5788-40a7-9aec-5c8ee2f8e9a9/value</title>
+                    <attachments>
+                        <attachment title='Request' source='63d48051-44cb-4d2d-9943-d17ef03264c2-attachment.json' type='application/json' size='44'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324891068' status='passed' stop='1620324891088'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4f7c8ffe-be38-434f-a207-a5477ae67e82-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='5abe0005-2a8f-4174-820d-d802d5b89d52-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324891098' status='passed' stop='1620324891237'>
+                    <name>POST /session/:sessionId/element/58ad7c0e-518b-413f-8482-c933fa7f8cda/value</name>
+                    <title>POST /session/:sessionId/element/58ad7c0e-518b-413f-8482-c933fa7f8cda/value</title>
+                    <attachments>
+                        <attachment title='Request' source='6dd26c16-84ca-4ed0-af45-57123d5dea71-attachment.json' type='application/json' size='25'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324891237' status='passed' stop='1620324891260'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='04ce76d4-f3fd-4e73-94c7-202e2330fd41-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='d7113faf-caf5-4c0a-a1de-d3a41e96f494-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324891265' status='broken' stop='1620324896066'>
+                    <name>POST /session/:sessionId/element/97de4e25-8d3e-4027-b01c-6ace735cb01a/click</name>
+                    <title>POST /session/:sessionId/element/97de4e25-8d3e-4027-b01c-6ace735cb01a/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1620324895624' status='passed' stop='1620324896064'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='e0914481-c6ef-40e2-be83-dc29a27729df-attachment.png' type='image/png' size='692451'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button class="Button_primaryButtonRoot__2roA8 Button_primaryButton__cbUWf" type="submit">...&lt;/button> is not clickable at point (641, 610). Other element would receive the click: &lt;div class="CookieConsent_root__3ETpS">...&lt;/div>
+                  (Session info: chrome=90.0.4430.93)</message>
+                <stack-trace>element click intercepted: Element &lt;button class="Button_primaryButtonRoot__2roA8 Button_primaryButton__cbUWf" type="submit">...&lt;/button> is not clickable at point (641, 610). Other element would receive the click: &lt;div class="CookieConsent_root__3ETpS">...&lt;/div>
+                  (Session info: chrome=90.0.4430.93)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at LoginPage.with (/home/vivek/Regenera/test/pageobjects/login.page.js:21:23)
+                    at Context.&lt;anonymous> (/home/vivek/Regenera/test/specs/example.e2e.js:7:19)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

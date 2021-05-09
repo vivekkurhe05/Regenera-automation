@@ -1,0 +1,95 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620324726444' stop='1620324786448'>
+    <name>Test login functionality</name>
+    <title>Test login functionality</title>
+    <test-cases>
+        <test-case start='1620324726444' status='broken' stop='1620324786448'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620324726446' status='passed' stop='1620324781310'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8a7285b8-9fe2-4a12-9887-91b7c859ca8d-attachment.json' type='application/json' size='48'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324781312' status='passed' stop='1620324781332'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b4c81133-2811-4140-8784-62121ee30ab3-attachment.json' type='application/json' size='50'/>
+                        <attachment title='Response' source='8812fe2c-3708-45b4-90c3-7e7130022893-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324781344' status='passed' stop='1620324781521'>
+                    <name>POST /session/:sessionId/element/6d171d63-3f1a-47d6-b003-dd37453be82e/value</name>
+                    <title>POST /session/:sessionId/element/6d171d63-3f1a-47d6-b003-dd37453be82e/value</title>
+                    <attachments>
+                        <attachment title='Request' source='804627ce-3742-4114-90ba-8dc903134034-attachment.json' type='application/json' size='44'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324781521' status='passed' stop='1620324781545'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7ba37e56-c62e-4060-b13c-0a6742f95e87-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='322b795e-edbe-4feb-98d5-328f696e511e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324781554' status='passed' stop='1620324781674'>
+                    <name>POST /session/:sessionId/element/17509c0c-7705-4c65-9be9-8776754f5f26/value</name>
+                    <title>POST /session/:sessionId/element/17509c0c-7705-4c65-9be9-8776754f5f26/value</title>
+                    <attachments>
+                        <attachment title='Request' source='eacd0be5-633d-4671-a4ff-8c6887dc2476-attachment.json' type='application/json' size='25'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324781675' status='passed' stop='1620324781709'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6f2c3972-2a4d-4960-a80c-3e008ff764ac-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='8aa7c1f9-b2c6-4f00-ab27-9cf6ca9643bf-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620324781715' status='broken' stop='1620324786447'>
+                    <name>POST /session/:sessionId/element/721fc765-5a85-4764-8c6c-971bf9947b5c/click</name>
+                    <title>POST /session/:sessionId/element/721fc765-5a85-4764-8c6c-971bf9947b5c/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1620324786052' status='broken' stop='1620324786447'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Test login functionality should login with valid credentials" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/home/vivek/Regenera/test/specs/example.e2e.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Test login functionality should login with valid credentials" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/home/vivek/Regenera/test/specs/example.e2e.js)
+                    at createTimeoutError (/home/vivek/Regenera/node_modules/mocha/lib/errors.js:491:15)
+                    at Test.Runnable._timeoutError (/home/vivek/Regenera/node_modules/mocha/lib/runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (/home/vivek/Regenera/node_modules/mocha/lib/runnable.js:246:24)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
