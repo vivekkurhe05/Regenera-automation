@@ -149,7 +149,7 @@ exports.config = {
         outputDir: "./report",
         outputFileFormat: function (options) {
           // optional
-          return `results-${options.cid}.${options.capabilities}.xml`;
+          return `results-${new Date().getTime()}.xml`;
         },
       },
     ],
