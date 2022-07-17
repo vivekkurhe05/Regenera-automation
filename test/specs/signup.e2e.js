@@ -23,12 +23,12 @@ describe('Sign up page tests', function (){
         expect(SignupPage.signUpBtn).toBeDisplayed();
     });
 
-    it('should redirect to login page', function () {
+    it.skip('should redirect to login page', function () {
         SignupPage.click(SignupPage.signInLink);
         expect(LoginPage.loginPageTitle).toBeDisplayed();
     });
 
-    it('should show error message when password is less than 8 chars long', function () {
+    it.skip('should show error message when password is less than 8 chars long', function () {
         SignupPage.password.setValue('Pass123');
         SignupPage.signUpBtn.click();
         expect(SignupPage.passwordError).toHaveText('The password should be at least 8 characters.');
