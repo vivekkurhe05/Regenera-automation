@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Sign up page tests" timestamp="2022-07-19T16:10:02" time="0.08" tests="3" failures="0" errors="0" skipped="2">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sign up page tests"/>
+      <property name="capabilities" value="chrome.103_0_5060_114.macosx"/>
+      <property name="file" value="./test/specs/signup.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.103_0_5060_114.macosx.Sign_up_page_tests" name="should verify the interactive elements on sign up page" time="0.056">
+      <system-out><![CDATA[
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/url - {"url":"https://staging.regenera.pe/signup"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/element - {"using":"css selector","value":"#email"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/element - {"using":"css selector","value":"#fname"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/element - {"using":"css selector","value":"#lname"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/element - {"using":"css selector","value":"#password"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/element - {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/element - {"using":"css selector","value":"#userType"}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.103_0_5060_114.macosx.Sign_up_page_tests" name="should redirect to login page" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.103_0_5060_114.macosx.Sign_up_page_tests" name="should show error message when password is less than 8 chars long" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: DELETE /session/c79e54f47a51e8130d5a477afc58a736 - {}
+RESULT: {"url":"https://staging.regenera.pe/signup"}
+RESULT: {"using":"css selector","value":"#lname"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2109a2af-b07f-46e3-a715-289ef5b5d2f9","ELEMENT":"2109a2af-b07f-46e3-a715-289ef5b5d2f9"}]}
+RESULT: {"using":"css selector","value":"#email"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"bdf480b6-e234-4e96-916a-54be5c16f201","ELEMENT":"bdf480b6-e234-4e96-916a-54be5c16f201"}]}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a8a52748-f0e7-4f8a-a9ea-e20049bdc98f","ELEMENT":"a8a52748-f0e7-4f8a-a9ea-e20049bdc98f"}]}
+RESULT: {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9a30c055-3814-44e6-a8b8-57c4f15af1f4","ELEMENT":"9a30c055-3814-44e6-a8b8-57c4f15af1f4"}]}
+RESULT: {"using":"css selector","value":"#userType"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a7563476-a51f-430c-9e0a-f8367d24cdfa","ELEMENT":"a7563476-a51f-430c-9e0a-f8367d24cdfa"}]}
+RESULT: {"using":"css selector","value":"#fname"}
+COMMAND: POST /session/c79e54f47a51e8130d5a477afc58a736/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"07913aff-562e-498b-9aeb-5f0f04a080ee","ELEMENT":"07913aff-562e-498b-9aeb-5f0f04a080ee"}]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
